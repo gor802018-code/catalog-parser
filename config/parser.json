@@ -1,0 +1,21 @@
+{
+  "site": "https://demo-shop.test",
+  "start_url": "https://demo-shop.test/catalog?page={page}",
+  "max_pages": 3,
+  "delay_seconds": 1.0,
+  "timeout_seconds": 20,
+  "retries": 2,
+  "user_agent": "Mozilla/5.0 (compatible; CatalogParser/1.0; +https://example.test/parser)",
+  "selectors": {
+    "card": "div.product-card",
+    "title": "h2.product-title",
+    "price": "span.product-price",
+    "link": "a.product-link",
+    "sku": "span.product-sku",
+    "availability": "span.product-stock"
+  },
+  "output": {
+    "csv": "output/catalog.csv",
+    "xlsx": "output/catalog.xlsx"
+  }
+}

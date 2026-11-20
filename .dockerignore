@@ -1,0 +1,15 @@
+.git/
+.gitignore
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.example
+screenshots/
+kwork/
+tests/
+output/
+.idea/
+README.md
+docker-compose.yaml
+Dockerfile

@@ -1,0 +1,13 @@
+services:
+  parser:
+    build: .
+    image: catalog-parser:latest
+    container_name: catalog-parser
+    volumes:
+      - ./config:/app/config:ro
+      - ./output:/app/output
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
